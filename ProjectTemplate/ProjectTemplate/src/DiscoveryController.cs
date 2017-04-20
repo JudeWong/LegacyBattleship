@@ -3,6 +3,7 @@ using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics;
 using SwinGameSDK;
 
@@ -21,7 +22,7 @@ static class DiscoveryController
 	/// </remarks>
 	public static void HandleDiscoveryInput()
 	{
-		if (SwinGame.KeyTyped(KeyCode.vk_ESCAPE)) {
+		if (SwinGame.KeyTyped(KeyCode.VK_ESCAPE)) {
 			AddNewState(GameState.ViewingGameMenu);
 		}
 
@@ -62,7 +63,7 @@ static class DiscoveryController
 		const int HITS_TOP = 206;
 		const int SPLASH_TOP = 256;
 
-		if ((SwinGame.KeyDown(KeyCode.vk_LSHIFT) | SwinGame.KeyDown(KeyCode.vk_RSHIFT)) & SwinGame.KeyDown(KeyCode.vk_C)) {
+		if ((SwinGame.KeyDown(KeyCode.VK_LSHIFT) | SwinGame.KeyDown(KeyCode.VK_RSHIFT)) & SwinGame.KeyDown(KeyCode.VK_C)) {
 			DrawField(HumanPlayer.EnemyGrid, ComputerPlayer, true);
 		} else {
 			DrawField(HumanPlayer.EnemyGrid, ComputerPlayer, false);

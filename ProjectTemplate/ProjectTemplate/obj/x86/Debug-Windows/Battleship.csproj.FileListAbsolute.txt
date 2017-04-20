@@ -4,3 +4,5 @@ C:\Users\Asus\Desktop\DP1\Pass task 4\ProjectTemplate\ProjectTemplate\obj\x86\De
 C:\Users\Asus\Desktop\DP1\Pass task 4\ProjectTemplate\ProjectTemplate\obj\x86\Debug-Windows\MyGame.exe
 C:\Users\Asus\Desktop\DP1\Pass task 5\ProjectTemplate\ProjectTemplate\obj\x86\Debug-Windows\Battleship.csprojResolveAssemblyReference.cache
 C:\Users\Asus\Desktop\DP1\Pass task 5\ProjectTemplate\ProjectTemplate\obj\x86\Debug-Windows\MyGame.exe
+C:\Users\Asus\LegacyBattleship\ProjectTemplate\ProjectTemplate\obj\x86\Debug-Windows\Battleship.csprojResolveAssemblyReference.cache
+C:\Users\Asus\LegacyBattleship\ProjectTemplate\ProjectTemplate\obj\x86\Debug-Windows\MyGame.exe

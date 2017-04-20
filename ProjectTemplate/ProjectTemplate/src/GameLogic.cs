@@ -1,12 +1,13 @@
-using SwinGameSDK;
+
 using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics;
 static class GameLogic
 {
-	public static void Main ()
+	public static void Main()
 	{
 		//Opens a new Graphics Window
 		SwinGame.OpenGraphicsWindow("Battle Ships", 800, 600);
@@ -28,7 +29,6 @@ static class GameLogic
 		FreeResources();
 	}
 }
-
 
 //=======================================================
 //Service provided by Telerik (www.telerik.com)
