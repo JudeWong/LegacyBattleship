@@ -3,7 +3,6 @@ using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Data;
 using System.Diagnostics;
 /// <summary>
 /// The SeaGridAdapter allows for the change in a sea grid view. Whenever a ship is
@@ -22,6 +21,16 @@ public class SeaGridAdapter : ISeaGrid
 	{
 		_MyGrid = grid;
 		_MyGrid.Changed += new EventHandler(MyGrid_Changed);
+	}
+
+	event EventHandler ISeaGrid.Changed {
+		add {
+			throw new NotImplementedException ();
+		}
+
+		remove {
+			throw new NotImplementedException ();
+		}
 	}
 
 	/// <summary>
@@ -46,7 +55,7 @@ public class SeaGridAdapter : ISeaGrid
 	/// <returns>a tile, either what it actually is, or if it was a ship then return a sea tile</returns>
 	public TileView Item {
 		get {
-			TileView result = _MyGrid.Item(x, y);
+			TileView result = _MyGrid.Item;
 
 			if (result == TileView.Ship) {
 				return TileView.Sea;
@@ -59,7 +68,7 @@ public class SeaGridAdapter : ISeaGrid
 	/// <summary>
 	/// Indicates that the grid has been changed
 	/// </summary>
-	public event EventHandler ISeaGrid.Changed;
+	public event EventHandler<ISeaGrid> Changed;
 
 	/// <summary>
 	/// Get the width of a tile
